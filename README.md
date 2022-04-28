@@ -2,3 +2,8 @@
 
 # mongoasfs
 Use [MongoDB](https://www.mongodb.com/) as Cloud File Storage.
+
+## Installing
+```
+npm install mongoasfs
+```
