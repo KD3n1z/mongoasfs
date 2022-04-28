@@ -1,0 +1,29 @@
+{
+  "name": "mongoasfs",
+  "version": "1.1.1",
+  "description": "Use MongoDB as Cloud File Storage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KD3n1z/mongoasfs.git"
+  },
+  "keywords": [
+    "mongo",
+    "mongodb",
+    "filestorage",
+    "cloud",
+    "heroku"
+  ],
+  "author": "kd3n1z",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KD3n1z/mongoasfs/issues"
+  },
+  "homepage": "https://github.com/KD3n1z/mongoasfs#readme",
+  "dependencies": {
+    "mongodb": "^4.5.0"
+  }
+}
