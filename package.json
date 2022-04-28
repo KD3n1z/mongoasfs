@@ -1,6 +1,6 @@
 {
   "name": "mongoasfs",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "description": "Use MongoDB as Cloud File Storage.",
   "main": "index.js",
   "scripts": {

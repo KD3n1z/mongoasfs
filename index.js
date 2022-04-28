@@ -64,4 +64,14 @@ module.exports.MongoFS = class MongoFS {
 
         _callback();
     }
+
+    getFiles(_callback){
+        let arr = [];
+
+        if(!this.connected){
+            throw "Not connected to MongoDB";
+        }
+        
+        _callback(this.filesCollection.find({}));
+    }
 }

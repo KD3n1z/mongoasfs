@@ -30,6 +30,14 @@ fs.connect(() => {
     fs.readFile("test.txt", (content) => {
         console.log(content); // Hello, world!
     });
+
+    // Get all stored files:
+    fs.getFiles((arr) => {
+        arr.forEach(element => {
+            console.log(element.fileName);
+        });
+        // test.txt
+    });
 });
 ```
 
