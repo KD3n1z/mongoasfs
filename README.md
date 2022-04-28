@@ -10,7 +10,7 @@ npm install mongoasfs
 
 
 ## Using
-```
+```javascript
 // Connect module
 const { MongoFS } = require('mongoasfs');
 
