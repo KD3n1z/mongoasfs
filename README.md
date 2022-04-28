@@ -7,3 +7,28 @@ Use [MongoDB](https://www.mongodb.com/) as Cloud File Storage.
 ```
 npm install mongoasfs
 ```
+
+
+## Using
+```
+// Connect module
+const { MongoFS } = require('mongoasfs');
+
+// Create instance of MongoFS
+const fs = new MongoFS(
+        "mongodb+srv://admin:...",  // URL
+        "myFirstDatabase",          // Database Name
+        "files"                     // Collection Name
+    );
+
+// Connect to MongoDB
+fs.connect(() => {
+    // Create/rewrite test.txt
+    fs.writeFile("test.txt", "Hello, world!");
+
+    // Read test.txt
+    fs.readFile("test.txt", (content) => {
+        console.log(content); // Hello, world!
+    });
+});
+```
